@@ -1,0 +1,452 @@
+/* Selectors : 
+  1- Tag Name 
+  2- class .nav-list
+  3- id #container
+*/
+
+/* 
+margin : space between element and the parent
+padding: space between element and the child
+border: border size
+*/
+
+/* display */
+/*
+block: take all row space. no elements beside it.
+inline: accept elements to be beside it, its content width 
+
+flex : "FlexBox"
+1- Flex container
+  flex-direction
+  justify-content
+  flex-wrap
+  */
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background-image: url("/images/headerBg.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgba(221, 221, 221, 0.2);
+}
+
+#container {
+  position: relative;
+  margin: auto;
+  width: 1200px;
+}
+
+
+header{
+  padding-top: 48px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav{
+  display: inline;
+}
+
+.nav-ul{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap ;
+  justify-content: space-evenly;
+  width: 500px;
+  padding: 0;
+}
+.nav-list{
+  list-style: none;
+  font-size: 16px;
+}
+
+
+.main-banner{
+  display: flex;
+  justify-content: space-between;
+  background-image: url("/images/traveller-img.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: contain;
+}
+
+.slide-description{
+  position: relative;
+  padding-top: 75px;
+  padding-bottom: 150px;
+  width: 420px;
+}
+
+.slide-description h4{
+  color: #DF6951;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.big-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90vw; /* Slightly smaller than full viewport width */
+  height: 80vh; /* Reduced height for better fit */
+  padding: 30px;
+  /* background-color: #F1A501; */
+  border-radius: 12px;
+  gap: 30px;
+  box-sizing: border-box; /* Ensure padding is included in width/height */
+}
+
+.text-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: white;
+}
+
+.image-side {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-side img {
+  max-width: 90%; /* Reduced width for smaller image */
+  max-height: 70%; /* Reduced height for better fit */
+  object-fit: contain; /* Maintain aspect ratio */
+  border-radius: 12px;
+}
+.find-out-button {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #FFF;
+  text-decoration: none;
+  cursor: pointer; /* Changes the cursor to a hand when hovering */
+}
+.find-out-button:hover{
+  background-color: #F1A501;
+  color: #FFF;
+  transition-property: background-color, color;
+  transition-duration: 0.5s;
+}
+.play-demo-button:hover{
+  background-color: #F1A501;
+  color: #FFF;
+  transition-property: background-color, color;
+  transition-duration: 0.5s;
+}
+.slide-description h1{
+  position: relative;
+  font-family:'Times New Roman', Times, serif ;
+  font-size: 69px;
+  color: #181E4B;
+  margin-block: 24px; /* equal margin-top and margin-bottom */
+  line-height: 70px;
+  z-index: 1;
+}
+
+.slide-description p{
+  color: #5E6282;
+  font-size: 16px;
+  margin-block: 6px; /* equal margin-top and margin-bottom */
+  line-height: 30px;
+}
+
+.slide-cta{
+  margin-top: 28px
+}
+
+.find-out-button{
+  border-width: 0px;
+  background-color: #F1A501;
+  width: 170px;
+  height: 60px;
+  font-family:Arial, Helvetica, sans-serif;
+  color: #FFF;
+  border-radius: 10px; /* corners radius 10px 10px 10px 10px */ 
+  box-shadow: 0px 20px 35px rgba(241, 165, 1, 0.15); /* x y blur color */
+}
+
+.play-demo-button{
+  position: relative;
+  border-width: 0px;
+  background-color: transparent;
+  width: 170px;
+  height: 60px;
+  font-size: 17px;
+  margin-left: 44px;
+}
+
+.play-demo-button img{
+  position: absolute;
+  display: inline;
+  top: -12px;
+  left: -25px;
+}
+
+.play-demo-button span{
+  position: relative;
+  left: 20px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  color: #686D77;
+}
+
+.categories{
+  position: relative;
+  margin-top: 100px;
+}
+
+.ctegory-bg {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  width: 150px; /* Adjusted width for smaller size */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.section-title{
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #5E6282;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.section-heading{
+  font-family:'Times New Roman', Times, serif;
+  font-size: 50px;
+  color: #14183E;
+  text-align: center;
+  margin-block: 10px;
+}
+
+.categories-container{
+  position: relative;
+  display: flex;
+  margin: 50px;
+  justify-content: space-between;
+}
+
+.category-card{
+  position: relative;
+  background-color: rgba(221, 221, 221, 0);
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+  width: 268px;
+  height: 314px;
+  border-radius: 36px;
+  text-align: center;
+  transition-property: background-color,  box-shadow;
+  transition-duration: 2s;
+}
+
+.category-card:hover /* :hover => when mouse move over the element*/ {
+  background-color: rgba(255, 255, 255,1);
+  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.2);
+  transition-property: background-color,  box-shadow;
+  transition-duration: 2s;
+}
+
+.category-image-container {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 30%;
+  overflow: hidden;
+  /*Ensurestheimagedoesn'toverflowthediv*/
+}
+
+.category-image-container img {
+  width: 100%; /* Makes the image fit the width of the container */
+  height: 100%; /* Makes the image fit the height of the container */
+  object-fit: cover; /* Ensures the image covers the container while maintaining aspect ratio */
+}
+
+.category-image-container img{
+    position: relative;
+    bottom: 0;
+}
+
+.category-card h4{
+  margin-block: 15px;
+  color: 1E1D4C;
+}
+
+.category-card p{
+  position: relative;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  max-width: 180px;
+  margin: auto;
+  color: #5E6282;
+  line-height: 28px;
+  
+}
+
+.top-selling{
+  margin-top: 160px;
+  margin-bottom: 132px;
+}
+
+.top-selling-container{
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 60px;
+}
+
+.top-bg {
+  position: relative;
+  display: inline-block;
+  width: 150px; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-left: 20px; /* Add spacing between elements */
+  vertical-align: middle; /* Align with other inline elements */
+}
+
+.top-selling-card{
+  width: 314px;
+  height: 457px;
+  border-radius: 24px;
+  background-color: #FFF;
+  overflow: hidden;
+  box-shadow: 0 100px 80px rgba(0,0,0,0.02);
+  z-index: 1;
+}
+
+.trip-pic{
+  width: 100%;
+  height: 327px
+}
+
+.trip-details{
+  padding: 25px;
+  font-size: 18px;
+  color: #5E6282;
+}
+
+.trip-details-price{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.trip-details-duration span{
+  margin-left: 12px;
+}
+
+.trip-details-duration::before{
+  content: url("/images/Vector.svg");
+  position: relative;
+  top: 2px;
+}
+
+.booking{
+  display: flex;
+  justify-content: space-between;
+}
+
+.booking-steps{
+  width: 50%;
+  margin-bottom: 130px;
+}
+/*.booking-steps .section-title, .booking-steps .section-heading*/
+.booking-steps :where(.section-title, .section-heading){  
+  text-align: left;
+}
+
+.booking-step{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 48px;
+  width: 400px;
+  color: #5E6282;
+}
+
+.booking-step-icon {
+  width: 48px;
+  height: 48px;/* Replace with the path to your icon */
+  background-size: cover;
+  background-position: center;
+  transform: rotate(0deg);
+  transition: transform 1s;
+}
+
+.booking-step-icon:hover{
+  transform: rotate(45deg);
+  transition: transform 1s;
+}
+
+.booking-step-description{
+  width: 330px;
+}
+.booking-step-description p{
+  margin-block: 4px;
+}
+
+.booking-card{
+  width: 40%;
+}
+
+.booking-card img{
+  width: 100%;
+  /* transition-property: width;
+  /*transition-duration: 2s;
+  /* transition-delay: 1s; */
+ /*transition-timing-function: ease; */
+  transition: width 2s 1s ease; /* property duration delay function*/
+}
+
+.booking-card img:hover{
+  width: 120%;
+  transition: width 2s 1s ease; /* property duration delay function*/
+  
+}
+
+
+
+footer{
+  text-align: center;
+  color: #5E6282;
+}
+
+/*
+transition
+transition-delay => time before transition 
+transition-duration => time for transition 
+transition-property => property (height, width, background, ..)
+transition-timing-function => how ?
+  ease - specifies a transition effect with a slow start, then fast, then end slowly (this is default)
+  linear - specifies a transition effect with the same speed from start to end
+  ease-in - specifies a transition effect with a slow start
+  ease-out - specifies a transition effect with a slow end
+  ease-in-out - specifies a transition effect with a slow start and end
+  cubic-bezier(n,n,n,n) - lets you define your own values in a cubic-bezier function =>designer
+
+*/
+
+/*
+transform 2D
+
+translate()  x , y ex: 30px, 50px
+rotate() 45deg
+scaleX() scale x2 x0.5
+scaleY()
+scale() 
+skewX()
+skewY()
+skew()
+matrix() matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY())
+
+
+*/
