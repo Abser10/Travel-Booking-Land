@@ -5,7 +5,11 @@ Built with **React** and **Tailwind CSS**, designed to showcase flights, hotel b
 
 ---
 ## 🛫 Live Demo
-
+  <p align="center">
+  <a href="https://abser10.github.io/Simple-Calculator-App/" target="_blank">
+    <img src="https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge&logo=github" alt="Live Demo Badge" />
+  </a>
+</p>
 -----
 ## 🚀 Features
 
