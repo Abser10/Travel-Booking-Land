@@ -4,7 +4,9 @@ A responsive and modern landing page for a travel and tourism service.
 Built with **React** and **Tailwind CSS**, designed to showcase flights, hotel bookings, custom tour packages, and more.
 
 ---
+## 🛫 Live Demo
 
+-----
 ## 🚀 Features
 
 - ✈️ Sleek and attractive UI tailored for travel and tourism
@@ -21,12 +23,12 @@ Built with **React** and **Tailwind CSS**, designed to showcase flights, hotel b
 - 🎨 Tailwind CSS (Utility-first styling)
 - 📜 JavaScript (ES6+)
 - 🧱 HTML5
-- 💅 CSS3 / SCSS (for any additional styles)
+- CSS3 / SCSS
 
 ---
 
 📸 Screenshots
-Add your screenshots here (optional)
+
 
 🎯 Purpose of the Project
 Build a modern UI/UX for travel agencies and booking platforms
@@ -51,7 +53,7 @@ Demonstrate real-world layout and interactivity
 👨‍💻 Author
 Developed with care and coffee by Ahmed Mohammed Abdelbaser
 
-🛫 Live Demo
+
 
 
 
